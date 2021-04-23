@@ -1,0 +1,102 @@
+<div class="scrolling content">
+  <form class="ui form">
+    <div class="field">
+      <label>Company Name</label>
+      <input type="text" name="company-name" placeholder="Company Name" />
+    </div>
+    <div class="field">
+      <label>Address</label>
+      <input type="text" name="address" placeholder="Address" />
+    </div>
+    <div class="field">
+      <label>City</label>
+      <input type="text" name="city" placeholder="City" />
+    </div>
+    <div class="field">
+      <label>State/Province</label>
+      <input type="text" name="state" placeholder="State/Province" />
+    </div>
+    <div class="field">
+      <label>Post Code</label>
+      <input type="text" name="postCode" placeholder="Post Code" />
+    </div>
+    <div class="field">
+      <label>Country</label>
+      <input type="text" name="country" placeholder="Country" />
+    </div>
+    <div class="field">
+      <label>Telephone Number</label>
+      <input type="text" name="telephone" placeholder="Telephone Number" />
+    </div>
+    <button class="ui fluid button" type="submit">Search By Name</button>
+  </form>
+  <br />
+  <form class="ui form">
+    <div class="field">
+      <label>DUNS Number</label>
+      <input type="text" name="duns" placeholder="DUNS Number" />
+    </div>
+    <button class="ui fluid button" type="submit">Search By DUNS</button>
+  </form>
+
+  <table *ngIf="showTable" class="ui striped table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Date Joined</th>
+        <th>E-mail</th>
+        <th>Called</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>John Lilki</td>
+        <td>September 14, 2013</td>
+        <td>jhlilk22@yahoo.com</td>
+        <td>No</td>
+      </tr>
+      <tr>
+        <td>Jamie Harington</td>
+        <td>January 11, 2014</td>
+        <td>jamieharingonton@yahoo.com</td>
+        <td>Yes</td>
+      </tr>
+      <tr>
+        <td>Jill Lewis</td>
+        <td>May 11, 2014</td>
+        <td>jilsewris22@yahoo.com</td>
+        <td>Yes</td>
+      </tr>
+      <tr>
+        <td>John Lilki</td>
+        <td>September 14, 2013</td>
+        <td>jhlilk22@yahoo.com</td>
+        <td>No</td>
+      </tr>
+      <tr>
+        <td>John Lilki</td>
+        <td>September 14, 2013</td>
+        <td>jhlilk22@yahoo.com</td>
+        <td>No</td>
+      </tr>
+      <tr>
+        <td>Jamie Harington</td>
+        <td>January 11, 2014</td>
+        <td>jamieharingonton@yahoo.com</td>
+        <td>Yes</td>
+      </tr>
+      <tr>
+        <td>Jill Lewis</td>
+        <td>May 11, 2014</td>
+        <td>jilsewris22@yahoo.com</td>
+        <td>Yes</td>
+      </tr>
+      <tr>
+        <td>John Lilki</td>
+        <td>September 14, 2013</td>
+        <td>jhlilk22@yahoo.com</td>
+        <td>No</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

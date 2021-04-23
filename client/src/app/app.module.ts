@@ -25,8 +25,8 @@ import config from './app.config';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
-import { MessagesComponent } from './messages/messages.component';
-import { ProfileComponent } from './profile/profile.component';
+import { SearchComponent } from './search/search.component';
+import { InvestigationComponent } from './investigation/investigation.component';
 
 const appRoutes: Routes = [
   {
@@ -38,13 +38,13 @@ const appRoutes: Routes = [
     component: OktaCallbackComponent,
   },
   {
-    path: 'profile',
-    component: ProfileComponent,
+    path: 'search',
+    component: SearchComponent,
     canActivate: [ OktaAuthGuard ],
   },
   {
-    path: 'messages',
-    component: MessagesComponent,
+    path: 'investigation',
+    component: InvestigationComponent,
     canActivate: [ OktaAuthGuard ],
   },
 ];
@@ -53,8 +53,8 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent,
     HomeComponent,
-    ProfileComponent,
-    MessagesComponent,
+    SearchComponent,
+    InvestigationComponent,
   ],
   imports: [
     BrowserModule,

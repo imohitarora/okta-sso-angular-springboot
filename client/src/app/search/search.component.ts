@@ -19,13 +19,14 @@ interface Claim {
 }
 
 @Component({
-  selector: 'app-profile',
-  templateUrl: './profile.component.html',
-  styleUrls: ['./profile.component.css']
+  selector: 'app-search',
+  templateUrl: './search.component.html',
+  styleUrls: ['./search.component.css']
 })
-export class ProfileComponent implements OnInit {
+export class SearchComponent implements OnInit {
   idToken;
   claims: Array<Claim>;
+  showTable = true;
 
   constructor(public oktaAuth: OktaAuthService) {
 

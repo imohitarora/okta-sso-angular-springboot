@@ -4,7 +4,6 @@ const dotenv = require('dotenv');
 const fs = require('fs');
 
 const CNAENV = path.resolve(__dirname, 'cnaenv');
-console.log(CNAENV);
 if (fs.existsSync(CNAENV)) {
   const envConfig = dotenv.parse(fs.readFileSync(CNAENV));
   Object.keys(envConfig).forEach((k) => {

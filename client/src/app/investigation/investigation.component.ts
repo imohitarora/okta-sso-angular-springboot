@@ -23,10 +23,10 @@ interface Message {
 
 @Component({
   selector: 'app-messages',
-  templateUrl: './messages.component.html',
-  styleUrls: ['./messages.component.css']
+  templateUrl: './investigation.component.html',
+  styleUrls: ['./investigation.component.css']
 })
-export class MessagesComponent implements OnInit {
+export class InvestigationComponent implements OnInit {
   failed: Boolean;
   messages: Array<Message> [];
 
